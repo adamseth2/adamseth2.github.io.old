@@ -17,7 +17,7 @@ h1 {
 }
 .form 
 {
-    margin: 0 10%;
+    margin: 0 calc(10% );
     background-color: #a4bcd83f;
     padding: 5%;
 

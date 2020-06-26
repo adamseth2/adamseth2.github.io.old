@@ -1,0 +1,63 @@
+*{
+    margin: 0;
+    padding: 0;
+    outline: none;
+    border: none;
+    font-family: 'Roboto', sans-serif;
+}
+.temp-Space {
+    width: 100%;
+    height: 150px;
+    background-color: #aaaaaa;
+    
+    
+}
+h1 {
+    text-align: center;
+}
+.form 
+{
+    margin: 0 10%;
+    background-color: #a4bcd83f;
+    padding: 5%;
+
+}
+.form .space {
+    height: 10%;
+}
+@media screen and (min-width: 320px) {
+    html {
+      font-size: calc(16px + 6 * ((100vw - 320px) / 2000));
+    }
+    .font-small {
+        font-size: calc(16px + 6 * ((100vw - 320px) / 2000)); /* fix this later*/
+    }
+}
+.form-container {
+
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    margin-bottom: 7%;
+}
+
+.box-reg {
+    display: flex;
+    flex-direction: column;
+    grid-column: span 2 / auto;
+}
+.box-small {
+    display: flex;
+    flex-direction: column;
+}
+.form input {
+    border-bottom: 8px rgb(55, 103, 175) solid;
+    padding: 5px 5px 2px 0px;
+    font-size: 20px;
+    margin-right: 8%;
+    background-color: rgba(223, 245, 252, 0.6);
+}
+.form input[type ="date"] {
+    padding: 0px 5px 2px 0px;
+}
+
+

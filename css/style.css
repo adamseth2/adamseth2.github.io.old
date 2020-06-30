@@ -27,6 +27,12 @@ p {
 header h2, p{
     padding-bottom: 0em;
 }
+header h2 {
+    padding-top: 3em;
+}
+header p {
+    padding: 0.5em 0;
+}
 .align-left{
     text-align: left;
 }
@@ -35,31 +41,40 @@ header h2, p{
     text-decoration: none;
     color: #fff;
     padding: 1em 2em;
-    margin: 1em 0;
-    border: 3px solid #666;
+    margin-top: 1em;
+    border: 3px solid #c1c1c1;
     box-sizing: content-box;
 }
 .btn:hover{
-    color: #666;
+    color: #d8d8d8;
 }
 li {
     list-style: none;
 }
 header {
-    background: url(../images/toothBackgroundDarkenDarken.png);
-    width: 100%;
+    padding-bottom: 1.5em;    
+    min-height: 450px;
     height:auto;
-    background-size: 200%;
-    background-repeat: no-repeat;
-    background-position: center;
 }
-header, #section-A, #section-B, #section-C {
+header .img-bg {
+    position: absolute;
+    background: url('../images/dentist-dr.jpg');
+    opacity: 0.5;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width:100%;
+    height: 450px;
+    z-index: -1;
+}
+#section-A, #section-B, #section-C {
     padding: 1.5em 0;
 }
 
 #section-A {
     background-color: #eaeaea;
     color: #333;
+    padding-bottom: 0;
 }
 #section-B {
     padding-bottom: 0em;
@@ -100,7 +115,7 @@ header, #section-A, #section-B, #section-C {
 #section-D li {
 }
 #section-D li:first-child {
-    background-color: #9ac3ff;
+    background-color: #0a58ce;
     padding-top: 1em;
     padding-bottom: 3em;
 }

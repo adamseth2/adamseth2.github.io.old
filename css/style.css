@@ -61,14 +61,62 @@ header, #section-A, #section-B, #section-C {
     background-color: #eaeaea;
     color: #333;
 }
+#section-B {
+    padding-bottom: 0em;
+}
 #section-B .card {
     background-color: #fff;
     color: #333;
     padding-bottom: 3em;
-
     margin-bottom: 2em;
 }
 #section-B .cropped-img {
     object-fit: cover;
 }
+#section-C {
+    padding-top: 0;
+}
+#section-C h2{
+    position: relative;
+}
+#section-C h2::before {
+    content: open-quote;
+    font-size: 1.5em;
+    z-index: -1;
+    color: #ffc46c;
+    
+}
+#section-C h2::after {
+    content: close-quote;
+    font-size: 1.5em;
+    color: #ffc46c;
+    line-height: 1rem;
+    
+}
+#section-C h2 {
+    margin:0;
+    padding-bottom: 0;
+}
+#section-D li {
+}
+#section-D li:first-child {
+    background-color: #9ac3ff;
+    padding-top: 1em;
+    padding-bottom: 3em;
+}
 
+#section-D li:last-child {
+    padding-top: 1em;
+}
+footer {
+    background-color: #eaeaea;
+    color: #333;
+    font-size: 0.8em;
+}
+.test {
+    margin: 0 1em;
+}
+#paypal-button-container {
+
+    text-align: center;
+}

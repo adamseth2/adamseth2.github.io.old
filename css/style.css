@@ -1,9 +1,9 @@
 *{
     padding: 0;
     margin: 0;
+
 }
 body{
-
     font-family: Arial, Helvetica, sans-serif;
     background-color: #333;
     color: #fff;
@@ -19,7 +19,6 @@ img{
 }
 h1, h2 {
     padding: 1em 0;
-
 }
 p {
     padding: 1em 0;
@@ -32,6 +31,10 @@ header h2 {
 }
 header p {
     padding: 0.5em 0;
+}
+a {
+    color: inherit;
+    text-decoration: inherit;
 }
 .align-left{
     text-align: left;
@@ -82,11 +85,9 @@ header .img-bg {
 #section-B .card {
     background-color: #fff;
     color: #333;
-    padding-bottom: 3em;
+    padding-bottom: 6em;
     margin-bottom: 2em;
-}
-#section-B .cropped-img {
-    object-fit: cover;
+    box-sizing: content-box;
 }
 #section-C {
     padding-top: 0;
@@ -112,6 +113,7 @@ header .img-bg {
     margin:0;
     padding-bottom: 0;
 }
+
 #section-D li {
 }
 #section-D li:first-child {
@@ -123,6 +125,7 @@ header .img-bg {
 #section-D li:last-child {
     padding-top: 1em;
 }
+
 footer {
     background-color: #eaeaea;
     color: #333;
@@ -134,4 +137,34 @@ footer {
 #paypal-button-container {
 
     text-align: center;
+}
+@media(min-width: 700px) {
+    .grid {
+        display:grid;
+        grid-template-columns: 1fr repeat(2, minmax(auto, 25em)) 1fr;
+
+    }
+    .content-wrap {
+        grid-column: 2/4;
+    }
+    .content-wrap-text {
+        columns: 2;
+        column-gap: 3em;
+        padding-bottom: 3em;
+
+    }
+    .content-wrap-text p {
+        padding-top: 0;
+        margin-top: 0;
+    }
+    #section-B ul{
+        justify-content: space-around;
+        display:flex;
+    }
+    #section-B li {
+        width: 31%;
+    }
+    #section-B img {
+    }
+    
 }
